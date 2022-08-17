@@ -60,7 +60,7 @@ function generatePassword() {
     return cSearch.substr(lnPos,1)
   }
 
-  if ((numChar>0) && (numChar<=128)) {
+  if ((numChar>=1) && (numChar<=128)) {      // lCont
     // THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
     var lInclLowerC = confirm("Do you want to include lower case?");
     var lInclUpperC = confirm("Do you want to include upper case?");
